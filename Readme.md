@@ -6,3 +6,4 @@ what does the payload of the document mean and how can they be tweaked across di
 
 how can compression cost or add to cpu cost ?
 CPU Bound vs IO Bound ?
+index policy ? What is the impact of index policy on performance /cost and latency ?
