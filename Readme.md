@@ -8,3 +8,5 @@ how can compression cost or add to cpu cost ?
 CPU Bound vs IO Bound ?
 index policy ? What is the impact of index policy on performance /cost and latency ?
 point query vs point read  , how does this play with cost and performance ? What are the other querying patterns for nosql dbs 
+
+querying against index vs querying against document store ? What is the cost and performance advantage ? What happens if everything gets served by index ?
