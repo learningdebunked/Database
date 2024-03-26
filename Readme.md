@@ -16,6 +16,8 @@ patch vs put what saves money / saves latency
 
 How Amazon Dynamo works ?
 
+- Reference: https://newsletter.systemdesign.one/p/amazon-dynamo-architecture
+
 - They do consistent hashing to partition data and scalability
 
 - They use virtual nodes to prevent the hot shard problem  // TODO virtual nodes
