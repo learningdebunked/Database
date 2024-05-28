@@ -35,3 +35,7 @@ How Amazon Dynamo works ?
 - They use Merkle trees to synchronize servers and handle permanent failures //TODO Merkle Trees
 
 - They use gossip protocol for service discovery and failure detection //TODO Gossip protocol
+
+
+Database scaling
+![image](https://github.com/learningdebunked/Database/assets/7702406/26efc15d-5d57-45c9-9679-bedcfe6cb926)
