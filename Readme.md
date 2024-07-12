@@ -39,3 +39,11 @@ How Amazon Dynamo works ?
 
 Database scaling
 ![image](https://github.com/learningdebunked/Database/assets/7702406/26efc15d-5d57-45c9-9679-bedcfe6cb926)
+
+
+Relational data model -- Developed by EF Codd
+
+Main components of relational data model of EF Codd
+      Relations
+      Domains 
+      tuples
