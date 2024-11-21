@@ -47,3 +47,43 @@ Main components of relational data model of EF Codd
       Relations
       Domains 
       tuples
+
+
+
+      ****Covering Indexes****
+
+      Don’t index just filters. Index what you need.
+
+If you index only your WHERE columns, you leave performance on the table.
+
+One of the most effective yet overlooked techniques is Covering Indexes. 
+
+Unlike standard indexes that only help filter rows, covering indexes include all columns required for a query.
+
+It will reduce query execution time by eliminating the need to access the main table.
+
+𝗪𝗵𝘆 𝗖𝗼𝘃𝗲𝗿𝗶𝗻𝗴 𝗜𝗻𝗱𝗲𝘅𝗲𝘀?
+
+• By including all required columns, the query can be resolved entirely from the index, avoiding table lookups.
+• Can speed up join queries by reducing access to the base table.
+
+𝗖𝗼𝗹𝘂𝗺𝗻𝘀 𝘁𝗼 𝗜𝗻𝗰𝗹𝘂𝗱𝗲:
+
+• WHERE: Filters rows.
+• SELECT: Data to retrieve.
+• ORDER BY: Sorting columns.
+
+𝗦𝘁𝗲𝗽𝘀 𝘁𝗼 𝗖𝗿𝗲𝗮𝘁𝗲 𝗖𝗼𝘃𝗲𝗿𝗶𝗻𝗴 𝗜𝗻𝗱𝗲𝘅𝗲𝘀
+
+1- Use execution plans to identify queries that perform frequent table lookups.
+2- Focus on columns in WHERE, SELECT, and ORDER BY.
+3- Don’t create multiple indexes with overlapping columns unnecessarily.
+
+𝗖𝗼𝘃𝗲𝗿𝗶𝗻𝗴 𝗜𝗻𝗱𝗲𝘅𝗲𝘀 𝗮𝗿𝗲 𝗻𝗼𝘁 𝗳𝗼𝗿 𝗳𝗿𝗲𝗲.
+
+• Each insert, update, or delete operation must update the index, which can slow down write-heavy workloads.
+• Covering indexes consumes more disk space.
+
+Covering indexes are a powerful tool for database performance, especially for read-heavy applications. 
+While they can increase write costs, the trade-off is often worth it for the dramatic speedups in query performance. 
+Every table lookup wastes precious time. Fix it!
